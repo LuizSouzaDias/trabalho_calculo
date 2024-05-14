@@ -1,0 +1,49 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+h1.text-center{ 
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.select{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-select{
+    width:20%;
+}
+
+/*operacaoBase.html*/
+.form-group select{
+    width: 100%;
+}
+/*fim*/
+
+.container-input{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-input button{
+    margin: 20px;
+}
+
+.container-input #numero{
+    margin: 0 auto;
+}
+
+.div_select{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_select div select{
+    width: 150px;
+}
