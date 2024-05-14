@@ -119,8 +119,8 @@ function f(funcao,x) {
 }
 
 function limparCampos(){
-    document.getElementById('limite_superior').value = "2";
-    document.getElementById('limite_inferior').value = "0"; 
-    document.getElementById('h').value = "0.4"; 
-    document.getElementById('btn_calcular').disabled = false;
+    document.getElementById('limite_superior').value = "";
+    document.getElementById('limite_inferior').value = ""; 
+    document.getElementById('h').value = ""; 
+    document.getElementById('btn_calcular').disabled = true;
 }
