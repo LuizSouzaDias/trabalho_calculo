@@ -78,11 +78,10 @@ function SegundaRegraSimpsom(subdivisoes){
     alert(sum);
 
     alert(subdivisoes);
-    
-    for (var i = 1; i < subdivisoes; i++) {
+
+    for (var i = 1; i < subdivisoes; i++){
         var x = parseFloat(limite_inferior) + i * h;
         sum += 3 * f(funcao,x);
-        alert("rodou" + sum);
     }
 
     alert(sum);
