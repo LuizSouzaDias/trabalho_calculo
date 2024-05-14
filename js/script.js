@@ -80,7 +80,7 @@ function SegundaRegraSimpsom(subdivisoes){
         sum += 3 * f(funcao,x);
     }
 
-    sum *= (3 * h ) / 8;
+    sum *= ((3 * h ) / 8);
     return parseFloat(sum.toFixed(4));
 }
 
