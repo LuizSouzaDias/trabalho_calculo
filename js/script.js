@@ -75,18 +75,18 @@ function SegundaRegraSimpsom(subdivisoes){
 
     var sum = f(funcao,parseFloat(limite_inferior)) + f(funcao,parseFloat(limite_superior));
 
-    console.log(sum);
+    alert(sum);
     
     for (var i = 1; i < subdivisoes; i++) {
         var x = parseFloat(limite_inferior) + i * h;
         sum += 3 * f(funcao,x);
     }
 
-    console.log(sum);
+    alert(sum);
     
     sum = ((3 * h ) / 8) * sum;
 
-    console.log(sum);
+    alert(sum);
     return parseFloat(sum.toFixed(4));
 }
 
