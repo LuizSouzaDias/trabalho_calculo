@@ -75,22 +75,12 @@ function SegundaRegraSimpsom(subdivisoes){
 
     var sum = f(funcao,parseFloat(limite_inferior)) + f(funcao,parseFloat(limite_superior));
 
-    alert(sum);
-
-    alert(subdivisoes);
-
-    for (var i = 1; i < subdivisoes; i++){
+    for (var i = 1; i < subdivisoes; i++) {
         var x = parseFloat(limite_inferior) + i * h;
         sum += 3 * f(funcao,x);
-        alert("X " + x);
-        alert(f(funcao,x));
     }
 
-    alert(sum);
-    
-    sum = ((3 * h ) / 8) * sum;
-
-    alert(sum);
+    sum *= (3 * h ) / 8;
     return parseFloat(sum.toFixed(4));
 }
 
@@ -129,6 +119,7 @@ function f(funcao,x) {
 }
 
 function limparCampos(){
+    document.getElementById('funcao').value = "";
     document.getElementById('limite_superior').value = "";
     document.getElementById('limite_inferior').value = ""; 
     document.getElementById('h').value = ""; 
